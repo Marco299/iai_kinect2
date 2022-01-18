@@ -57,6 +57,9 @@
 #include <kinect2_registration/kinect2_registration.h>
 #include <kinect2_registration/kinect2_console.h>
 
+#include <opencv2/imgproc/types_c.h>
+#include <opencv2/imgproc/imgproc_c.h>
+
 class Kinect2Bridge
 {
 private:
@@ -461,12 +464,12 @@ private:
   void initCompression(const int32_t jpegQuality, const int32_t pngLevel, const bool use_png)
   {
     compressionParams.resize(7, 0);
-    compressionParams[0] = CV_IMWRITE_JPEG_QUALITY;
+    compressionParams[0] = cv::IMWRITE_JPEG_QUALITY;
     compressionParams[1] = jpegQuality;
-    compressionParams[2] = CV_IMWRITE_PNG_COMPRESSION;
+    compressionParams[2] = cv::IMWRITE_PNG_COMPRESSION;
     compressionParams[3] = pngLevel;
-    compressionParams[4] = CV_IMWRITE_PNG_STRATEGY;
-    compressionParams[5] = CV_IMWRITE_PNG_STRATEGY_RLE;
+    compressionParams[4] = cv::IMWRITE_PNG_STRATEGY;
+    compressionParams[5] = cv::IMWRITE_PNG_STRATEGY_RLE;
     compressionParams[6] = 0;
 
     if(use_png)

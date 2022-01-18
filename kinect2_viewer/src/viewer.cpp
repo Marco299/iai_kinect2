@@ -50,6 +50,9 @@
 
 #include <kinect2_bridge/kinect2_definitions.h>
 
+#include <opencv2/imgproc/types_c.h>
+#include <opencv2/imgproc/imgproc_c.h>
+
 class Receiver
 {
 public:
