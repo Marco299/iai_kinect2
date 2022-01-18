@@ -12,7 +12,7 @@ It has been tested using:
 - Ubuntu 20.04 LTS
 - ROS Noetic
 
-## Maintainer
+## Original Maintainer
 
 - [Thiemo Wiedemeyer](https://ai.uni-bremen.de/team/thiemo_wiedemeyer) <<wiedemeyer@cs.uni-bremen.de>>, [Institute for Artificial Intelligence](http://ai.uni-bremen.de/), University of Bremen
 
